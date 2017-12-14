@@ -1,0 +1,3 @@
+google-assistant-grpc/node_modules/*
+google-assistant-grpc/package-lock.json
+devicecredentials.json

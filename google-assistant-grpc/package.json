@@ -1,0 +1,38 @@
+{
+    "scripts": {
+        "start": "node index.js",
+        "demo": "node demo.js",
+        "test": "./node_modules/.bin/ava -c 1 -s ./test/*.js"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "name": "google-assistant-nodejs",
+    "version": "0.0.1",
+    "dependencies": {
+        "async": "^1.5.2",
+        "google-proto-files": "^0.15.0",
+        "google-protobuf": "^3.3.0",
+        "grpc": "^1.0.0",
+        "resolve": "1.5.0",
+        "google-auth-library": "0.12.0",
+        "promise.prototype.finally": "3.1.0"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "chai-spies": "^0.7.1",
+        "eslint": "^3.19.0",
+        "eslint-config-semistandard": "^11.0.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-chai-expect": "^1.1.1",
+        "eslint-plugin-chai-friendly": "^0.3.6",
+        "eslint-plugin-import": "^2.3.0",
+        "eslint-plugin-node": "^5.0.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "jsdoc": "^3.5.5",
+        "jsdoc-baseline": "https://github.com/hegemonic/baseline/tarball/master",
+        "nyc": "^11.0.3",
+        "winston": "2.2.0"
+    }
+}

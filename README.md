@@ -16,7 +16,6 @@ env/bin/pip install --upgrade google-auth-oauthlib[tool]
 
 ```
 env/bin/google-oauthlib-tool --client-secrets credentials.json \
-                             --credentials devicecredentials.json \
                              --scope https://www.googleapis.com/auth/assistant-sdk-prototype \
                              --save
 ```
@@ -27,7 +26,8 @@ env/bin/google-oauthlib-tool --client-secrets credentials.json \
 
 ```Javascript
 const GoogleAssistant = require('./googleassistant');
-const deviceCredentials = require('./devicecredentials.json');
+const homedir = require('homedir')
+const deviceCredentials = require(`${homedir()}/.config/google-oauthlib-tool/credentials.json`);
 
 const CREDENTIALS = {
   client_id: deviceCredentials.client_id,

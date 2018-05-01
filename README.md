@@ -1,4 +1,4 @@
-# Assistant SDK Sample for Node.JS
+# Google Assistant SDK for devices - Node.js
 
 ## Setup
 

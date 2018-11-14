@@ -10,7 +10,7 @@
 ```
 python3 -m venv env
 env/bin/python -m pip install --upgrade pip setuptools
-env/bin/pip install --upgrade google-auth-oauthlib[tool]
+env/bin/pip install --upgrade "google-auth-oauthlib[tool]"
 ```
 1. Use the [`google-oauthlib-tool`](https://github.com/GoogleCloudPlatform/google-auth-library-python-oauthlib) to generate credentials:
 
